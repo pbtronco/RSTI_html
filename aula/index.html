@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula Exemplos Formulários</title>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header style="background-color: #5f050571">
+            <p>Grêmio</p>
+        </header>
+            <nav style="background-color: #bbb014">
+                <h1>QUINTA DIA 30 AS 14H</h1>
+            </nav>
+        <div style="background-color: rgb(105, 103, 103)">
+            <h1>AULA</h1>
+        </div>
+        <section style="background-color:rgb(0, 236, 51)">
+        </section>
+       <form method="post" action="https://httpbin.org/post" style="background-color: #868181">
+            <fieldset>
+                <legend>Formulário 1</legend>
+                    <label>
+                        <b>Texto curto:</b><br>
+                        <input type="text" name="texto_curto" placeholder="Texto curto" maxlength="5" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>E-mail:</b><br>
+                        <input type="email" name="email" placeholder="exemplo@mail.com" enctype="multipart/form-data" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Numérico:</b><br>
+                        <input type="number" name="numero" min="0" max="10" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Volume:</b><br>
+                        <input type="range" name="volume" min="0" max="100" value="80" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Cor:</b><br>
+                        <input type="color" name="cor">
+                    </label>
+                    <label>
+                        <br>
+                        <b>Texto Longo:</b><br>
+                        <textarea rows="10" cols="100"></textarea>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Senha:</b><br>
+                        <input type="password" name="senha" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Endereço:</b><br>
+                        <input type="text" name="endereco" placeholder="Rua, avenida, estrada" required disabled>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Data:</b><br>
+                        <input type="date" name="data" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Horário:</b><br>
+                        <input type="time" name="hora" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Data e Hora:</b><br>
+                        <input type="datetime-local" name="date-hora" required>
+                    </label>
+                    <label>
+                        <br>
+                        <input type="checkbox" name="ativado" required> Ativado
+                    </label>
+                    <label>
+                        <br>
+                        <b>Arquivo:</b><br>
+                        <input type="file" name="arquivo" required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Sexo:</b><br>
+                        <input type="radio" name="sexo" value="M" checked required>Masculino
+                        <input type="radio" name="sexo" value="F" required>Feminino
+                    </label>
+                    <label>
+                        <br>
+                        <b>Selecione seu estado:</b><br>
+                        <select name="estado">
+                           <option>--Selecione--</option>
+                           <option value="RS">Rio Grande do Sul</option>
+                           <option value="RJ">Rio de Janeiro</option>
+                           <option value="RN">Rio Grande do Norte</option>
+                           <option value="SC">Santa Catarina</option>
+                        </select>
+                    </label>
+                    <p>
+                        <button style="background-color:rgb(35, 162, 179)" type="submit">Enviar</button>
+                        <button style="background-color:rgb(252, 47, 47)" type="reset">Limpar</button>
+                    </p>
+            </fieldset>
+       </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Estacionamento</title>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <h1>Controle de Entrada Estacionamento</h1>
+        <form method="post" action="https://httpbin.org/post" style="background-color: #b3b3b3">
+            <fieldset>
+                <legend>Entrada</legend>
+                    <label>
+                        <b>Placa do Carro</b><br>
+                        <input type="text" name="placa" maxlength="8" required >
+                    </label>
+                    <label>
+                        <br>
+                        <b>Marca do Carro</b><br>
+                        <input type="text" name="marca" placeholder="Marca do Carro"required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Modelo do Carro:</b><br>
+                        <input type="text" name="modelo" placeholder="Modelo do Carro"required>
+                    </label>
+                    <label>
+                        <br>
+                        <b>Cor do Carro:</b><br>
+                        <input type="color" name="cor">
+                    </label>
+                    <label>
+                        <br>
+                        <b>Data e hora de entrada:</b><br>
+                        <input type="datetime-local" name="date">
+                    </label>
+                    <p>
+                        <button style="background-color:rgb(0, 225, 255)" type="submit">Gravar</button>
+                    </p>
+
+        </form>
+    </body>
+</html>

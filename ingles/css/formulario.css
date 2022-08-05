@@ -1,0 +1,38 @@
+form input, select {
+    width: 325px;
+    height: 30px;
+    background: linear-gradient(to bottom, #023373, #0a50ac, #023373);
+    color: #fff;
+    border: 1px solid #333333;
+    font-size: 17px;
+    margin-bottom: 5px;
+
+}
+
+form p{
+    display: inline-block;
+}
+option{
+    background-color: #023373;
+}
+form button{
+    background-color: #d90452;
+    color: #fff;
+    padding: 3px;
+    width: 180px;
+    margin-bottom: 15px;
+    display: block;
+    
+    text-align: center;
+    text-decoration: none;
+    border: 0px;
+    font-size: 23px;
+    border-bottom: 5px solid #fff;
+    border-radius: 5px 0px 35px 0px;
+    box-shadow: 5px 5px 15px -8px #022873;
+    
+}
+form button:hover{
+        background-color: #022873;
+        border-bottom: 5px solid #d90452;
+}
